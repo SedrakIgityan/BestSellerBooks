@@ -12,6 +12,7 @@ struct Category: Codable {
     let displayName: String
     let listImageURLString: String
     let updateState: String
+   
     let books: [Book]
     
     enum CodingKeys: String, CodingKey {

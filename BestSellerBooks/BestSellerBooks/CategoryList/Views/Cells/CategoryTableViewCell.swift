@@ -16,6 +16,7 @@ final class CategoryTableViewCell: UITableViewCell {
     @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var categoryTitleLabel: UILabel!
     @IBOutlet weak var categoryUpdateStateButton: UIButton!
+    @IBOutlet weak var dateLabel: UILabel!
     
     
     // MARK: - Setup -
@@ -23,6 +24,7 @@ final class CategoryTableViewCell: UITableViewCell {
     func setup(_ viewModel: CategoryViewModel) {
         self.categoryTitleLabel.text = viewModel.categoryTitle
         self.categoryUpdateStateButton.setTitle(viewModel.categoryUpdateState, for: .normal)
+        self.dateLabel.text = String(format: "%@ | %@", viewModel.oldDate, viewModel.currentDate)
         
         ImageLoadWorker.load(from: viewModel.categoryImageURL, to: self.categoryImageView)
     }
