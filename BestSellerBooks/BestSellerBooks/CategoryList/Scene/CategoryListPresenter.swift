@@ -54,7 +54,9 @@ extension CategoryListPresenter: CategoryListPresenterInput {
             
             return CategoryViewModel(categoryImageURL: categoryImageURL,
                                      categoryTitle: category.displayName,
-                                     categoryUpdateState: category.updateState)
+                                     categoryUpdateState: category.updateState,
+                                     oldDate: list.previousDateString,
+                                     currentDate: list.currentDateString)
         }
         
         self.output.displayCategories(categoryViewModelList)

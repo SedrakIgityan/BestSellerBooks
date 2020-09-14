@@ -12,4 +12,6 @@ struct CategoryViewModel {
     let categoryImageURL: URL
     let categoryTitle: String
     let categoryUpdateState: String
+    let oldDate: String
+    let currentDate: String
 }

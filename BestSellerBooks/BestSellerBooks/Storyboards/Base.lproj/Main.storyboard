@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MGY-Sc-aoH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MGY-Sc-aoH">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -62,8 +62,8 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="old date | new date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0h-bL-nfW">
-                                                            <rect key="frame" x="0.0" y="50.666666666666664" width="146.33333333333334" height="20.666666666666664"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="50.666666666666664" width="136" height="17.999999999999993"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -71,7 +71,7 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="WlB-fz-C66" secondAttribute="bottom" id="7TW-1G-dkK"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="x0h-bL-nfW" secondAttribute="trailing" constant="100.99999999999997" id="9Ew-at-nBn"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="x0h-bL-nfW" secondAttribute="trailing" id="9Ew-at-nBn"/>
                                                         <constraint firstItem="NLq-3c-RZO" firstAttribute="leading" secondItem="hkn-Ii-qwU" secondAttribute="leading" id="F1z-dA-vqH"/>
                                                         <constraint firstItem="x0h-bL-nfW" firstAttribute="leading" secondItem="NLq-3c-RZO" secondAttribute="leading" id="Rls-ec-53k"/>
                                                         <constraint firstItem="WlB-fz-C66" firstAttribute="leading" secondItem="NLq-3c-RZO" secondAttribute="leading" id="SXA-kj-4sA"/>
@@ -99,6 +99,7 @@
                                             <outlet property="categoryImageView" destination="CAu-CP-7R2" id="oVb-Ab-cZ7"/>
                                             <outlet property="categoryTitleLabel" destination="NLq-3c-RZO" id="UK5-IQ-eiE"/>
                                             <outlet property="categoryUpdateStateButton" destination="WlB-fz-C66" id="Gur-Ap-trS"/>
+                                            <outlet property="dateLabel" destination="x0h-bL-nfW" id="IIc-RO-nJe"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
